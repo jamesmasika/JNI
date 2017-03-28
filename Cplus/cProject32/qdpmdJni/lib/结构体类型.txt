@@ -1,0 +1,50 @@
+//输入报单
+struct CFocusFtdcInputOrderField
+{
+	///经纪公司编号
+	char	BrokerID[11];
+	///投资者编号
+	char	InvestorID[19];
+	///用户代码
+	char	UserID[19];
+	///用户本地报单号
+	char	UserOrderLocalID[23];
+	///用户自定义域
+	char	UserCustom[65];
+	///交易所代码
+	char	ExchangeID[11];
+	///系统报单编号
+	char	OrderSysID[33];
+	///合约代码
+	char	InstrumentID[31];
+	///报单类型
+	char	OrderPriceType;
+	///买卖方向
+	char	Direction;
+	///开平标志
+	char	OffsetFlag;
+	///投机套保标志
+	char	HedgeFlag;
+	///价格
+	double	LimitPrice;
+	///数量
+	int	Volume;
+	///有效期类型
+	char	TimeCondition;
+	///GTD日期
+	char	GTDDate[9];
+	///成交量类型
+	char	VolumeCondition;
+	///最小成交量
+	int	MinVolume;
+	///止损价
+	double	StopPrice;
+	///强平原因
+	char	ForceCloseReason;
+	///自动挂起标志
+	int	IsAutoSuspend;
+	///业务单元
+	char	BusinessUnit[32];
+	///业务类别
+	char	BusinessType;
+};
